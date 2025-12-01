@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobster - Find the Perfect Job for You</title>
+    <!-- Tailwind CSS CDN (utility-first styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons for UI icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom global styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white">
+    <!--
+        Layout sections are split into partial HTML files for better organization.
+        Each <div> below will be replaced at runtime with the contents of the
+        corresponding file in /partials via the loader in assets/js/main.js.
+    -->
+    <div data-include="partials/header.html"></div>
+    <div data-include="partials/hero.html"></div>
+    <div data-include="partials/categories.html"></div>
+    <div data-include="partials/featured-jobs.html"></div>
+    <div data-include="partials/footer.html"></div>
+
+    <!-- Custom Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
