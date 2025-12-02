@@ -40,6 +40,9 @@ function initInteractions() {
     // Setup scroll-triggered animations
     setupScrollAnimations();
     
+    // Setup mobile menu toggle
+    setupMobileMenu();
+    
     // Add hover effects to category and job cards (for older browsers or when CSS hover is not enough)
     const categoryCards = document.querySelectorAll('.category-card');
     const jobCards = document.querySelectorAll('.job-card');
@@ -119,6 +122,26 @@ function initInteractions() {
                 submitButton.classList.remove('bg-green-600');
                 submitButton.classList.add('bg-blue-600');
             }, 3000);
+        });
+    }
+}
+
+// Setup mobile menu toggle functionality
+function setupMobileMenu() {
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
         });
     }
 }
