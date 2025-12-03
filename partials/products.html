@@ -1,97 +1,112 @@
 <!-- Products Section -->
-<section id="products" class="py-16 bg-white">
+<section id="products" class="py-16 bg-[#f5f5f5]">
     <div class="container mx-auto px-4">
         <!-- Section Header -->
         <div class="mb-12 text-center">
-            <h2 class="text-black mb-4">Our Products</h2>
+            <h2 class="text-black font-bold text-2xl mb-4">Our Products</h2>
             <p class="text-lg text-black max-w-2xl mx-auto">
                 Discover our innovative AI-powered products designed to transform your business operations
             </p>
         </div>
 
         <!-- Products Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 gap-6 max-w-6xl mx-auto">
             <!-- Product Card 1 -->
-            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-[#AEA7A3] hover:shadow-xl transition-all duration-300 product-card">
-                <div class="relative h-48 bg-gradient-to-br from-[#795238] to-[#525254]">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <i class="fas fa-robot text-white text-6xl opacity-20"></i>
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg  hover:shadow-xl transition-all duration-300 product-card">
+                <div class="flex flex-col md:flex-row">
+                    <!-- Image Section - 1/4 width -->
+                    <div class="md:w-2/5 w-full relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop" 
+                             alt="AI Assistant Platform" 
+                             class="w-full h-full object-cover min-h-[200px] md:min-h-[250px]" 
+                             loading="lazy">
                     </div>
-                    <div class="absolute bottom-4 left-4">
-                        <div class="bg-white rounded-full p-3">
-                            <i class="fas fa-robot text-[#795238] text-2xl"></i>
+                    
+                    <!-- Content Section - 3/4 width -->
+                    <div class="md:w-3/5 w-full p-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="mb-3 text-2xl font-bold text-black">AI Assistant Platform</h3>
+                            <p class="text-black mb-4 leading-relaxed">
+                                A comprehensive AI assistant solution that integrates seamlessly with your existing systems to automate customer interactions and support.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">AI Chat</span>
+                                <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">24/7 Support</span>
+                                <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">Multi-language</span>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#enquiries" class="inline-block bg-[#795238] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#525254] transition">
+                                Learn More
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="p-6">
-                    <h3 class="mb-3">AI Assistant Platform</h3>
-                    <p class="text-black mb-4 text-sm leading-relaxed">
-                        A comprehensive AI assistant solution that integrates seamlessly with your existing systems to automate customer interactions and support.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">AI Chat</span>
-                        <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">24/7 Support</span>
-                        <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">Multi-language</span>
-                    </div>
-                    <a href="#enquiries" class="inline-block bg-[#795238] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#525254] transition">
-                        Learn More
-                    </a>
                 </div>
             </div>
 
             <!-- Product Card 2 -->
-            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-[#AEA7A3] hover:shadow-xl transition-all duration-300 product-card">
-                <div class="relative h-48 bg-gradient-to-br from-[#AEA7A3] to-[#795238]">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <i class="fas fa-chart-line text-white text-6xl opacity-20"></i>
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg  hover:shadow-xl transition-all duration-300 product-card">
+                <div class="flex flex-col md:flex-row">
+                    <!-- Image Section - 1/4 width -->
+                    <div class="md:w-2/5 w-full relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" 
+                             alt="Business Intelligence Suite" 
+                             class="w-full h-full object-cover min-h-[200px] md:min-h-[250px]" 
+                             loading="lazy">
                     </div>
-                    <div class="absolute bottom-4 left-4">
-                        <div class="bg-white rounded-full p-3">
-                            <i class="fas fa-chart-line text-[#795238] text-2xl"></i>
+                    
+                    <!-- Content Section - 3/4 width -->
+                    <div class="md:w-3/5 w-full p-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="mb-3 text-2xl font-bold text-black">Business Intelligence Suite</h3>
+                            <p class="text-black mb-4 leading-relaxed">
+                                Advanced analytics and predictive modeling tools powered by AI to help you make data-driven decisions and forecast business trends.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">Analytics</span>
+                                <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">Forecasting</span>
+                                <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">Reports</span>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#enquiries" class="inline-block bg-[#795238] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#525254] transition">
+                                Learn More
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="p-6">
-                    <h3 class="mb-3">Business Intelligence Suite</h3>
-                    <p class="text-black mb-4 text-sm leading-relaxed">
-                        Advanced analytics and predictive modeling tools powered by AI to help you make data-driven decisions and forecast business trends.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">Analytics</span>
-                        <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">Forecasting</span>
-                        <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">Reports</span>
-                    </div>
-                    <a href="#enquiries" class="inline-block bg-[#795238] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#525254] transition">
-                        Learn More
-                    </a>
                 </div>
             </div>
 
             <!-- Product Card 3 -->
-            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-[#AEA7A3] hover:shadow-xl transition-all duration-300 product-card">
-                <div class="relative h-48 bg-gradient-to-br from-[#525254] to-[#AEA7A3]">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <i class="fas fa-cogs text-white text-6xl opacity-20"></i>
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 product-card">
+                <div class="flex flex-col md:flex-row">
+                    <!-- Image Section - 1/4 width -->
+                    <div class="md:w-2/5 w-full relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=600&h=400&fit=crop" 
+                             alt="Workflow Automation Engine" 
+                             class="w-full h-full object-cover min-h-[200px] md:min-h-[250px]" 
+                             loading="lazy">
                     </div>
-                    <div class="absolute bottom-4 left-4">
-                        <div class="bg-white rounded-full p-3">
-                            <i class="fas fa-cogs text-[#795238] text-2xl"></i>
+                    
+                    <!-- Content Section - 3/4 width -->
+                    <div class="md:w-3/5 w-full p-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="mb-3 text-2xl font-bold text-black">Workflow Automation Engine</h3>
+                            <p class="text-black mb-4 leading-relaxed">
+                                Streamline your business processes with intelligent automation that learns and adapts to your workflow patterns and requirements.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">Automation</span>
+                                <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">Integration</span>
+                                <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">Custom Flows</span>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#enquiries" class="inline-block bg-[#795238] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#525254] transition">
+                                Learn More
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="p-6">
-                    <h3 class="mb-3">Workflow Automation Engine</h3>
-                    <p class="text-black mb-4 text-sm leading-relaxed">
-                        Streamline your business processes with intelligent automation that learns and adapts to your workflow patterns and requirements.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">Automation</span>
-                        <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">Integration</span>
-                        <span class="bg-[#f5f5f5] text-black text-xs px-3 py-1 rounded-full">Custom Flows</span>
-                    </div>
-                    <a href="#enquiries" class="inline-block bg-[#795238] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#525254] transition">
-                        Learn More
-                    </a>
                 </div>
             </div>
         </div>

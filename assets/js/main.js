@@ -182,18 +182,17 @@ function setupScrollAnimations() {
         rootMargin: '0px 0px -100px 0px'
     };
 
-    // Track which elements have already been animated to prevent re-animation
-    const animatedElements = new Set();
-
     // Create observer for individual elements
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting && !animatedElements.has(entry.target)) {
-                animatedElements.add(entry.target);
-                // Small delay to ensure smooth animation
+            if (entry.isIntersecting) {
+                // Add animated class when element comes into view
                 setTimeout(() => {
                     entry.target.classList.add('animated');
                 }, 50);
+            } else {
+                // Remove animated class when element leaves view
+                entry.target.classList.remove('animated');
             }
         });
     }, observerOptions);
@@ -202,10 +201,8 @@ function setupScrollAnimations() {
     function observeWithDelay(elements, delay = 0) {
         elements.forEach((el, index) => {
             setTimeout(() => {
-                if (!animatedElements.has(el)) {
-                    el.classList.add('animate-on-scroll');
-                    observer.observe(el);
-                }
+                el.classList.add('animate-on-scroll');
+                observer.observe(el);
             }, delay + (index * 50));
         });
     }
@@ -262,6 +259,17 @@ function setupScrollAnimations() {
                 card.classList.add('animate-on-scroll');
                 // Add stagger delay based on index
                 card.style.animationDelay = `${index * 0.12}s`;
+                observer.observe(card);
+            });
+        }
+
+        // Animate product cards one by one with stagger
+        const productCards = section.querySelectorAll('.product-card');
+        if (productCards.length > 0) {
+            productCards.forEach((card, index) => {
+                card.classList.add('animate-on-scroll');
+                // Add stagger delay based on index
+                card.style.animationDelay = `${index * 0.15}s`;
                 observer.observe(card);
             });
         }
