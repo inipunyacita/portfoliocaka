@@ -274,6 +274,17 @@ function setupScrollAnimations() {
             });
         }
 
+        // Animate client stats one by one with stagger
+        const clientStats = section.querySelectorAll('#clients .grid > div');
+        if (clientStats.length > 0) {
+            clientStats.forEach((stat, index) => {
+                stat.classList.add('animate-on-scroll');
+                // Add stagger delay based on index
+                stat.style.animationDelay = `${index * 0.15}s`;
+                observer.observe(stat);
+            });
+        }
+
         // Animate "View All" or action buttons at the bottom of section
         const actionButtons = section.querySelectorAll('.mt-8 button, .text-center button');
         actionButtons.forEach((button, index) => {

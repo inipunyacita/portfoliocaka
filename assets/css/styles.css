@@ -249,6 +249,39 @@ html {
     scroll-padding-top: 80px; /* Offset for fixed header */
 }
 
+/* ============================================
+   CLIENT LOGOS RUNNING ANIMATION
+   ============================================ */
+
+/* Infinite scrolling animation for client logos */
+@keyframes scroll-logos {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.logo-track {
+    animation: scroll-logos 15s linear infinite;
+    width: max-content;
+}
+
+/* Pause animation on hover for better UX */
+.logo-track:hover {
+    animation-play-state: paused;
+}
+
+/* Logo item hover effects */
+.logo-item {
+    transition: all 0.3s ease;
+}
+
+.logo-item:hover {
+    transform: scale(1.1);
+}
+
 /* Button hover pulse effect */
 button:hover {
     transform: translateY(-2px);
